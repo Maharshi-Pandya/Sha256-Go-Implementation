@@ -22,6 +22,5 @@ func main() {
 	hash := sha.Hash(str)
 
 	// print the byte array and hexstring
-	fmt.Println(hash)
 	fmt.Println(shaimpl.ToHexString(hash))
 }
