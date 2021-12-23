@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"example.com/sha/shaimpl"
+	"sha/shaimpl"
 )
 
 func main() {
