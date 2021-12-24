@@ -18,6 +18,7 @@ type Shash struct {
 
 // home
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
 
 	// just a sample message
@@ -33,6 +34,7 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 
 // get the input from the request body and calculate its hash
 func CalcSha(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
 
 	// decode the json from body

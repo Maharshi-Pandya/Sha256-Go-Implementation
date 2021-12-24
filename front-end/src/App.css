@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.hash {
+    background-color: #f0e7d7;
+}
+
+.sapling {
+    color: #E4CFA9;
+    font-weight: 400;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 3px 0.2rem #E4CFA9;
+}
+
+.header {
+    background-color: rgb(53, 53, 53);
+    border-radius: 10px 10px;
+    box-shadow: 0 0 0 0 black;
+    transition: ease-in 0.2s box-shadow;
+}
+
+.header:hover {
+    box-shadow: 0 1rem 3rem 0.2rem black;
+}
+
+.sub-btn {
+    border-color: rgb(53, 53, 53);
+    background-color: rgb(53, 53, 53);
+    transition: ease-in 0.3s color background-color;
+}
+
+.sub-btn:hover {
+    color: rgba(0,41,57,1);
+    background-color: #E4CFA9;
+}
