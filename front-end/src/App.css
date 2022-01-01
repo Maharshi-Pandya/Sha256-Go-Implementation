@@ -4,6 +4,7 @@
 
 .hash {
     background-color: #f0e7d7;
+    font-size: 2.2vmin;
 }
 
 .sapling {
@@ -24,6 +25,11 @@
 
 .header:hover {
     box-shadow: 0 1rem 3rem 0.2rem black;
+}
+
+.copy-text {
+    font-size: 0.9em;
+    color: #f0e7d7;
 }
 
 .sub-btn {
