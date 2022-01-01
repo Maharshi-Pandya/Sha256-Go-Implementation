@@ -1,8 +1,46 @@
 # Sha256-Go-Implementation
-A simple implementation of the sha256 hashing algorithm in Go (mainly to learn the 
-workings of the algorithm).
 
-## How it works
+A full stack application developed using [ReactJs](https://reactjs.org/) in frontend and Go in backend, which computes the `sha256` hash of the text which user provides as an input.
+
+
+## How it looks
+
+![sha256](./docs/App.png)
+
+
+## How to develop
+
+Clone this repo and navigate to the directory
+
+```shell
+$ git clone https://github.com/Maharshi-Pandya/Sha256-Go-Implementation
+$ cd Sha256-Go-Implementation
+```
+
+After that, navigate to the `server` directory, install dependencies, build the Go files and run the binary created.
+
+```shell
+$ cd server
+$ go get -u ./...
+$ go build
+$ ./server
+```
+
+Then in a new terminal window, navigate to the `front-end` directory, install the dependencies and run the React App.
+
+```shell
+$ cd front-end
+$ npm install
+$ npm start
+```
+
+With this, the app will spin up at [http://localhost:3000/](http://localhost:3000/) and you are ready to develop!
+
+
+<hr>
+
+
+## How Sha256 works
 
 The algorithm starts with initializing 8 Hash "values", `H0..H7` which will be our final hash after the algorithm reaches the end.
 
@@ -23,10 +61,14 @@ Next, we define an array `K0..K64` which contains `ints` which are the first 32 
     - We then initialise 8 working variables `a..h` that will modify the hash values further.
     - The next 64 iterations, changes and swaps and rotates the working variables `a..h`
     - Finally we add those into the values `H0..H7` thus getting the final sha256 hash.
+ 
 
-## How it looks
+Optionally, you can run the Sha256 hashing algorithm in the terminal itself. Navigate to the `algo` directory and run:
 
-![sha256](./Imgs/sha256.png)
+```shell
+$ go run main.go "<any-message-goes-here>"
+```
 
-Even appending a `"."` to the original string resulted in a completely different hash value.
-That's the beauty of sha256. 
+to get the sha256 hash of the message entered, as the below image shows :D
+
+![ShaTerminal](./docs/ShaTerminal.png)
